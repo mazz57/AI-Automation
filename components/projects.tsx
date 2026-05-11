@@ -29,9 +29,15 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="work" className="relative py-20 sm:py-24 lg:py-32">
+    <section id="work" className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.05]">
+      {/* Layered section background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/15 via-background to-background pointer-events-none" />
+      
+      {/* Top gradient separator */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent pointer-events-none" />
+
       {/* Subtle warm radial gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_100%,rgba(251,191,36,0.025),transparent_60%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_100%,rgba(251,191,36,0.02),transparent_60%)] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

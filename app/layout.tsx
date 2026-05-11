@@ -7,9 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Nexus AI — AI Automation Agency',
+  title: 'Omnimate — Automation & AI Solutions',
   description: 'We build AI-powered automation systems, SaaS products, and high-converting websites that scale your business.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {

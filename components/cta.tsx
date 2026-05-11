@@ -6,9 +6,12 @@ import { fadeUp, staggerContainer, viewport } from "@/lib/motion"
 
 export function CTA() {
   return (
-    <section className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.06]">
-      {/* Elevated section background */}
-      <div className="absolute inset-0 bg-surface-1/30" />
+    <section className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.05]">
+      {/* Layered section background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
+      
+      {/* Top gradient separator */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Card scales up as it enters viewport */}
@@ -40,7 +43,7 @@ export function CTA() {
           >
             <motion.h2
               variants={fadeUp}
-              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight mb-4 sm:mb-6 text-balance"
+              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight mb-4 sm:mb-6 text-balance text-white"
             >
               Ready to build something great?
             </motion.h2>

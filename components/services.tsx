@@ -33,9 +33,15 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="relative py-20 sm:py-24 lg:py-32">
+    <section id="services" className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.05]">
+      {/* Layered section background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
+      
+      {/* Top gradient separator */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
+
       {/* Subtle radial gradient for section depth */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_0%,rgba(255,255,255,0.02),transparent_60%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_0%,rgba(255,255,255,0.015),transparent_60%)] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header — staggered children */}
@@ -49,7 +55,7 @@ export function Services() {
           <motion.p variants={fadeUp} className="text-sm text-muted-foreground uppercase tracking-wider mb-3 sm:mb-4">
             Services
           </motion.p>
-          <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4">
+          <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4 text-white">
             Everything you need to grow
           </motion.h2>
           <motion.p variants={fadeUp} className="text-muted-foreground text-base sm:text-lg">

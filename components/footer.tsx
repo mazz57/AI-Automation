@@ -41,9 +41,12 @@ const colVariant = {
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-white/[0.06]">
-      {/* Subtle elevated background */}
-      <div className="absolute inset-0 bg-surface-1/20" />
+    <footer className="relative border-t border-white/[0.08] bg-gradient-to-b from-surface-2/40 to-background">
+      {/* Enhanced elevated background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/30 to-surface-1/10 pointer-events-none" />
+      
+      {/* Top gradient separator */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.12] to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <motion.div
@@ -58,7 +61,7 @@ export function Footer() {
               <div className="w-8 h-8 bg-foreground rounded-lg flex items-center justify-center">
                 <span className="text-background font-bold text-sm">N</span>
               </div>
-              <span className="text-lg font-semibold tracking-tight">Nexus</span>
+              <span className="text-lg font-semibold tracking-tight">Omnimate</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mb-6">
               We build AI-powered systems, SaaS products, and websites that help businesses grow and scale.
@@ -80,7 +83,7 @@ export function Footer() {
 
           {/* Company — custom delay 1 */}
           <motion.div custom={1} variants={colVariant}>
-            <h4 className="font-medium mb-4 text-sm text-foreground/90">Company</h4>
+            <h4 className="font-medium mb-4 text-sm text-white">Company</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -94,7 +97,7 @@ export function Footer() {
 
           {/* Resources — custom delay 2 */}
           <motion.div custom={2} variants={colVariant}>
-            <h4 className="font-medium mb-4 text-sm text-foreground/90">Resources</h4>
+            <h4 className="font-medium mb-4 text-sm text-white">Resources</h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
@@ -108,7 +111,7 @@ export function Footer() {
 
           {/* Legal — custom delay 3 */}
           <motion.div custom={3} variants={colVariant} className="col-span-1">
-            <h4 className="font-medium mb-4 text-sm text-foreground/90">Legal</h4>
+            <h4 className="font-medium mb-4 text-sm text-white">Legal</h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
@@ -130,7 +133,7 @@ export function Footer() {
           className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4"
         >
           <p className="text-muted-foreground/70 text-sm text-center sm:text-left">
-            © {new Date().getFullYear()} Nexus. All rights reserved.
+            © {new Date().getFullYear()} Omnimate. All rights reserved.
           </p>
           <p className="text-muted-foreground/70 text-sm text-center sm:text-right">
             Built with precision in San Francisco.

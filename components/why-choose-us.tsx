@@ -34,9 +34,15 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section id="about" className="relative py-20 sm:py-24 lg:py-32">
+    <section id="about" className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.05]">
+      {/* Layered section background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
+      
+      {/* Top gradient separator */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
+
       {/* Subtle radial gradient for depth */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_80%_at_20%_50%,rgba(255,255,255,0.015),transparent_60%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_80%_at_20%_50%,rgba(255,255,255,0.012),transparent_60%)] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-start">
@@ -49,9 +55,9 @@ export function WhyChooseUs() {
               viewport={viewport}
             >
               <motion.p variants={fadeUp} className="text-sm text-muted-foreground uppercase tracking-wider mb-3 sm:mb-4">
-                Why Nexus
+                Why Omnimate
               </motion.p>
-              <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-4 sm:mb-6">
+              <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-4 sm:mb-6 text-white">
                 Built for founders who move fast
               </motion.h2>
               <motion.p variants={fadeUp} className="text-muted-foreground text-base sm:text-lg leading-relaxed">

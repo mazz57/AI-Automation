@@ -38,12 +38,13 @@ const stepItem = {
 
 export function Process() {
   return (
-    <section id="process" className="relative py-20 sm:py-24 lg:py-32 border-y border-white/[0.06]">
+    <section id="process" className="relative py-20 sm:py-24 lg:py-32 border-y border-white/[0.05]">
       {/* Elevated section background */}
-      <div className="absolute inset-0 bg-surface-1/40" />
-      {/* Gradient transitions */}
-      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-background to-transparent pointer-events-none" />
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/25 via-surface-1/10 to-background pointer-events-none" />
+      
+      {/* Gradient transitions with improved visibility */}
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-background via-background/80 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -57,7 +58,7 @@ export function Process() {
           <motion.p variants={fadeUp} className="text-sm text-muted-foreground uppercase tracking-wider mb-3 sm:mb-4">
             Our Process
           </motion.p>
-          <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4">
+          <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4 text-white">
             How we work
           </motion.h2>
           <motion.p variants={fadeUp} className="text-muted-foreground text-base sm:text-lg">

@@ -19,9 +19,13 @@ const logoItem = {
 
 export function ClientLogos() {
   return (
-    <section className="relative py-12 sm:py-16 lg:py-20 border-y border-white/[0.06]">
-      {/* Subtle gradient overlay for section depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/30 to-transparent pointer-events-none" />
+    <section className="relative py-12 sm:py-16 lg:py-20 border-y border-white/[0.05]">
+      {/* Subtle layered background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
+      
+      {/* Gradient separators */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.p

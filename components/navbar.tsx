@@ -54,7 +54,7 @@ export function Navbar() {
             >
               <span className="text-background font-bold text-sm">N</span>
             </motion.div>
-            <span className="text-lg font-semibold tracking-tight">Nexus</span>
+            <span className="text-lg font-semibold tracking-tight">Omnimate</span>
           </Link>
 
           {/* Desktop nav links — staggered entrance */}

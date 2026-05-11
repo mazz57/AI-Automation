@@ -25,9 +25,14 @@ const tableRow = {
 
 export function ProductShowcase() {
   return (
-    <section className="relative py-20 sm:py-24 lg:py-32 border-y border-white/[0.06]">
-      {/* Elevated section background */}
-      <div className="absolute inset-0 bg-surface-1/50" />
+    <section className="relative py-20 sm:py-24 lg:py-32 border-y border-white/[0.05]">
+      {/* Layered section background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
+      
+      {/* Gradient separators */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent pointer-events-none" />
+      
       {/* Subtle top gradient fade */}
       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-background to-transparent pointer-events-none" />
       {/* Subtle bottom gradient fade */}
@@ -45,7 +50,7 @@ export function ProductShowcase() {
           <motion.p variants={fadeUp} className="text-sm text-muted-foreground uppercase tracking-wider mb-3 sm:mb-4">
             Featured Product
           </motion.p>
-          <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4">
+          <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4 text-white">
             LeadFlow — Intelligent Lead Management
           </motion.h2>
           <motion.p variants={fadeUp} className="text-muted-foreground text-base sm:text-lg">
