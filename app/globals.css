@@ -29,7 +29,7 @@
 
   /* Muted — improved contrast for better readability */
   --muted: oklch(0.22 0.004 60);
-  --muted-foreground: oklch(0.64 0 0);
+  --muted-foreground: oklch(0.68 0 0);
 
   --accent: oklch(0.18 0.004 60);
   --accent-foreground: oklch(0.98 0 0);
@@ -42,8 +42,8 @@
   --destructive-foreground: oklch(0.98 0 0);
 
   /* Borders — enhanced visibility while maintaining subtlety */
-  --border: oklch(0.25 0.004 60);
-  --border-highlight: oklch(1 0 0 / 0.08);
+  --border: oklch(0.27 0.004 60);
+  --border-highlight: oklch(1 0 0 / 0.1);
 
   --input: oklch(0.25 0.004 60);
   --ring: oklch(0.45 0 0);

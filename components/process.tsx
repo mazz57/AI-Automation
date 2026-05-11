@@ -39,10 +39,8 @@ const stepItem = {
 export function Process() {
   return (
     <section id="process" className="relative py-20 sm:py-24 lg:py-32 border-y border-white/[0.05]">
-      {/* Elevated section background */}
       <div className="absolute inset-0 bg-gradient-to-b from-surface-1/25 via-surface-1/10 to-background pointer-events-none" />
-      
-      {/* Gradient transitions with improved visibility */}
+
       <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-background via-background/80 to-transparent pointer-events-none" />
       <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
 
@@ -55,7 +53,7 @@ export function Process() {
           viewport={viewport}
           className="text-center max-w-2xl mx-auto mb-10 sm:mb-16"
         >
-          <motion.p variants={fadeUp} className="text-sm text-muted-foreground uppercase tracking-wider mb-3 sm:mb-4">
+          <motion.p variants={fadeUp} className="text-[0.8125rem] font-medium text-white/72 uppercase tracking-[0.22em] mb-3 sm:mb-4">
             Our Process
           </motion.p>
           <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4 text-white">
@@ -76,7 +74,6 @@ export function Process() {
         >
           {steps.map((step, i) => (
             <motion.div key={step.number} variants={stepItem} className="relative">
-              {/* Connector line — grows in from left after step appears */}
               {i < steps.length - 1 && (
                 <motion.div
                   className="hidden lg:block absolute top-8 left-[60%] h-px bg-white/[0.08] origin-left"
@@ -93,10 +90,10 @@ export function Process() {
                 className="relative cursor-default"
               >
                 <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-surface-2 rounded-2xl flex items-center justify-center shrink-0 border border-white/[0.06] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)]">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-surface-2 rounded-2xl flex items-center justify-center shrink-0 border border-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)]">
                     <step.icon size={22} className="text-foreground/80" />
                   </div>
-                  <span className="text-3xl sm:text-4xl font-bold text-white/[0.08]">{step.number}</span>
+                  <span className="text-3xl sm:text-4xl font-bold text-white/[0.12]">{step.number}</span>
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-foreground">{step.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>

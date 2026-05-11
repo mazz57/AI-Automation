@@ -124,7 +124,7 @@ export function Hero() {
                   <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
                   <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
                 </div>
-                <span className="text-[11px] text-muted-foreground/50 font-mono tracking-wide">automation.app/dashboard</span>
+                <span className="text-[11px] text-muted-foreground/60 font-mono tracking-wide">automation.app/dashboard</span>
                 <div className="w-16" />
               </div>
 
@@ -154,7 +154,7 @@ export function Hero() {
                 <div className="bg-surface-2/40 rounded-xl border border-white/[0.06] p-3 sm:p-4 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)]">
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-[11px] sm:text-[12px] text-white/80 font-medium">Revenue overview</span>
-                    <span className="text-[10px] sm:text-[11px] text-muted-foreground/50">Last 12 months</span>
+                    <span className="text-[10px] sm:text-[11px] text-muted-foreground/60">Last 12 months</span>
                   </div>
                   <div className="h-20 sm:h-24 flex items-end gap-1 sm:gap-1.5">
                     {chartBars.map((h, i) => (
@@ -175,7 +175,7 @@ export function Hero() {
                   {/* X-axis labels */}
                   <div className="flex justify-between mt-2">
                     {["Jan", "Apr", "Jul", "Oct", "Dec"].map((l) => (
-                      <span key={l} className="text-[9px] sm:text-[10px] text-muted-foreground/40">{l}</span>
+                      <span key={l} className="text-[9px] sm:text-[10px] text-muted-foreground/50">{l}</span>
                     ))}
                   </div>
                 </div>
@@ -202,7 +202,7 @@ export function Hero() {
                             <p className="text-[10px] sm:text-[11px] text-muted-foreground truncate">{item.action}</p>
                           </div>
                         </div>
-                        <span className="text-[10px] sm:text-[11px] text-muted-foreground/40 shrink-0">{item.time}</span>
+                        <span className="text-[10px] sm:text-[11px] text-muted-foreground/50 shrink-0">{item.time}</span>
                       </motion.div>
                     ))}
                   </div>

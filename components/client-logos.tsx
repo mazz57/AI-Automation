@@ -50,7 +50,7 @@ export function ClientLogos() {
               key={logo.name}
               variants={logoItem}
               whileHover={{ opacity: 1, scale: 1.06, transition: { duration: 0.18 } }}
-              className="text-muted-foreground/35 hover:text-muted-foreground/70 cursor-default select-none transition-colors duration-200"
+              className="text-muted-foreground/45 hover:text-muted-foreground/75 cursor-default select-none transition-colors duration-200"
             >
               <span className="text-lg sm:text-xl font-semibold tracking-tight">
                 {logo.name}

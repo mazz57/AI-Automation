@@ -34,13 +34,10 @@ const services = [
 export function Services() {
   return (
     <section id="services" className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.05]">
-      {/* Layered section background */}
       <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
-      
-      {/* Top gradient separator */}
+
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
 
-      {/* Subtle radial gradient for section depth */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_0%,rgba(255,255,255,0.015),transparent_60%)] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +49,7 @@ export function Services() {
           viewport={viewport}
           className="max-w-2xl mb-10 sm:mb-16"
         >
-          <motion.p variants={fadeUp} className="text-sm text-muted-foreground uppercase tracking-wider mb-3 sm:mb-4">
+          <motion.p variants={fadeUp} className="text-[0.8125rem] font-medium text-white/72 uppercase tracking-[0.22em] mb-3 sm:mb-4">
             Services
           </motion.p>
           <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4 text-white">
@@ -76,9 +73,9 @@ export function Services() {
               key={service.title}
               variants={scaleUp}
               whileHover={{ y: -4, transition: { duration: 0.2, ease: [0.25, 0.1, 0.25, 1] } }}
-              className="group relative bg-surface-1 rounded-2xl border border-white/[0.06] p-6 sm:p-8 hover:border-white/[0.12] transition-colors duration-300 cursor-default shadow-[0_2px_8px_rgba(0,0,0,0.2),inset_0_1px_0_0_rgba(255,255,255,0.03)]"
+              className="group relative bg-surface-1/95 rounded-2xl border border-white/[0.08] p-6 sm:p-8 hover:border-white/[0.14] transition-colors duration-300 cursor-default shadow-[0_10px_30px_rgba(0,0,0,0.2),inset_0_1px_0_0_rgba(255,255,255,0.04)]"
             >
-              <div className="w-11 h-11 sm:w-12 sm:h-12 bg-surface-2 rounded-xl flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-surface-3 transition-colors duration-300 border border-white/[0.04]">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 bg-surface-2 rounded-xl flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-surface-3 transition-colors duration-300 border border-white/[0.06]">
                 <service.icon size={22} className="text-foreground/80" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-foreground">{service.title}</h3>

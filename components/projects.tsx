@@ -30,13 +30,10 @@ const projects = [
 export function Projects() {
   return (
     <section id="work" className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.05]">
-      {/* Layered section background */}
       <div className="absolute inset-0 bg-gradient-to-b from-surface-1/15 via-background to-background pointer-events-none" />
-      
-      {/* Top gradient separator */}
+
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent pointer-events-none" />
 
-      {/* Subtle warm radial gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_100%,rgba(251,191,36,0.02),transparent_60%)] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +46,7 @@ export function Projects() {
           className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-16"
         >
           <div>
-            <motion.p variants={fadeUp} className="text-sm text-amber-400/70 uppercase tracking-wider mb-3 sm:mb-4">
+            <motion.p variants={fadeUp} className="text-[0.8125rem] font-medium text-white/72 uppercase tracking-[0.22em] mb-3 sm:mb-4">
               Our Work
             </motion.p>
             <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white">
@@ -84,38 +81,34 @@ export function Projects() {
               {/* Image container — realistic dashboard */}
               <motion.div
                 whileHover={{ scale: 1.01, transition: { duration: 0.3, ease: [0.25, 0.1, 0.25, 1] } }}
-                className="relative aspect-[16/10] bg-surface-1 rounded-2xl border border-white/[0.08] overflow-hidden mb-5 sm:mb-6 shadow-[0_8px_40px_rgba(0,0,0,0.35),inset_0_1px_0_0_rgba(255,255,255,0.04)]"
+                className="relative aspect-[16/10] bg-surface-1/95 rounded-2xl border border-white/[0.1] overflow-hidden mb-5 sm:mb-6 shadow-[0_14px_48px_rgba(0,0,0,0.38),inset_0_1px_0_0_rgba(255,255,255,0.05)]"
               >
-                {/* Dashboard content */}
                 <div className="absolute inset-0 p-3 sm:p-4">
-                  {/* Window controls */}
                   <div className="flex items-center gap-1.5 mb-3">
                     <div className="w-2 h-2 rounded-full bg-red-500/80" />
                     <div className="w-2 h-2 rounded-full bg-yellow-500/80" />
                     <div className="w-2 h-2 rounded-full bg-green-500/80" />
-                    <span className="text-[9px] text-muted-foreground/40 ml-2 font-mono">dashboard.app</span>
+                    <span className="text-[9px] text-muted-foreground/50 ml-2 font-mono">dashboard.app</span>
                   </div>
 
-                  {/* Metric cards row */}
                   <div className="flex gap-2 mb-3">
                     {project.metrics.map((metric) => (
                       <div 
                         key={metric.label} 
-                        className="flex-1 bg-surface-2/70 rounded-lg border border-white/[0.05] p-2 sm:p-2.5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)]"
+                        className="flex-1 bg-surface-2/80 rounded-lg border border-white/[0.08] p-2 sm:p-2.5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)]"
                       >
                         <div className="flex items-center gap-1.5 mb-1">
-                          <metric.icon size={10} className="text-muted-foreground/60" />
-                          <span className="text-[8px] sm:text-[9px] text-muted-foreground uppercase tracking-wide">{metric.label}</span>
+                          <metric.icon size={10} className="text-muted-foreground/70" />
+                          <span className="text-[8px] sm:text-[9px] text-white/68 uppercase tracking-[0.18em]">{metric.label}</span>
                         </div>
                         <span className="text-sm sm:text-base font-semibold text-white">{metric.value}</span>
                       </div>
                     ))}
                   </div>
 
-                  {/* Mini chart */}
-                  <div className="bg-surface-2/50 rounded-lg border border-white/[0.05] p-2 sm:p-3 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)]">
+                  <div className="bg-surface-2/60 rounded-lg border border-white/[0.08] p-2 sm:p-3 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)]">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-[9px] sm:text-[10px] text-white/70 font-medium">Performance</span>
+                      <span className="text-[9px] sm:text-[10px] text-white/76 font-medium">Performance</span>
                       <span className="text-[8px] sm:text-[9px] text-emerald-400">+24%</span>
                     </div>
                     <div className="h-10 sm:h-14 flex items-end gap-0.5 sm:gap-1">
@@ -134,28 +127,25 @@ export function Projects() {
                     </div>
                   </div>
 
-                  {/* Data rows */}
                   <div className="mt-2 sm:mt-3 space-y-1.5">
                     {[0.7, 0.5, 0.35].map((w, i) => (
                       <div key={i} className="flex items-center gap-2">
-                        <div className="w-5 h-5 sm:w-6 sm:h-6 bg-surface-3/60 rounded-full border border-white/[0.04]" />
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 bg-surface-3/70 rounded-full border border-white/[0.06]" />
                         <div className="flex-1 space-y-1">
                           <div className="h-1.5 sm:h-2 bg-surface-3/50 rounded" style={{ width: `${w * 100}%` }} />
                           <div className="h-1 sm:h-1.5 bg-surface-3/30 rounded w-1/3" />
                         </div>
-                        <div className="text-[8px] sm:text-[9px] text-muted-foreground/40">{["Active", "Pending", "New"][i]}</div>
+                        <div className="text-[8px] sm:text-[9px] text-muted-foreground/70">{["Active", "Pending", "New"][i]}</div>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                {/* Hover overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
 
-              {/* Content */}
               <div className="space-y-2">
-                <span className="text-xs text-amber-400/60 uppercase tracking-wider">
+                <span className="text-[0.75rem] font-medium text-white/72 uppercase tracking-[0.22em]">
                   {project.category}
                 </span>
                 <motion.h3
