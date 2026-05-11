@@ -41,10 +41,10 @@ const colVariant = {
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-white/[0.1] bg-gradient-to-b from-surface-2/45 to-background">
-      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/30 to-surface-1/10 pointer-events-none" />
+    <footer className="relative border-t border-white/10 bg-linear-to-b from-surface-2/45 to-background">
+      <div className="absolute inset-0 bg-linear-to-b from-surface-1/30 to-surface-1/10 pointer-events-none" />
 
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.14] to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/14 to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 lg:py-20">
         <motion.div
@@ -124,7 +124,7 @@ export function Footer() {
           initial="hidden"
           whileInView="visible"
           viewport={viewport}
-          className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4"
+          className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4"
         >
           <p className="text-muted-foreground/80 text-sm text-center sm:text-left">
             © {new Date().getFullYear()} Omnimate. All rights reserved.

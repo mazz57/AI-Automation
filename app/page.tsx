@@ -19,8 +19,8 @@ export default function Home() {
           backgroundSize: "32px 32px",
         }}
       />
-      <div className="pointer-events-none fixed top-0 left-0 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_top_left,rgba(251,191,36,0.03),transparent_60%)] z-0" />
-      <div className="pointer-events-none fixed bottom-0 right-0 w-[600px] h-[500px] bg-[radial-gradient(ellipse_at_bottom_right,rgba(148,163,184,0.025),transparent_60%)] z-0" />
+      <div className="pointer-events-none fixed top-0 left-0 w-200 h-150 bg-[radial-gradient(ellipse_at_top_left,rgba(251,191,36,0.03),transparent_60%)] z-0" />
+      <div className="pointer-events-none fixed bottom-0 right-0 w-150 h-125 bg-[radial-gradient(ellipse_at_bottom_right,rgba(148,163,184,0.025),transparent_60%)] z-0" />
       <div className="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_20%,rgba(0,0,0,0.4)_100%)]" />
 
       <div className="relative z-10">

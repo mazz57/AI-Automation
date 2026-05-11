@@ -38,11 +38,11 @@ const stepItem = {
 
 export function Process() {
   return (
-    <section id="process" className="relative py-20 sm:py-24 lg:py-32 border-y border-white/[0.05]">
+    <section id="process" className="relative py-20 sm:py-24 lg:py-32 border-y border-white/5">
       <div className="absolute inset-0 bg-gradient-to-b from-surface-1/25 via-surface-1/10 to-background pointer-events-none" />
 
-      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-background via-background/80 to-transparent pointer-events-none" />
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-24 bg-linear-to-b from-background via-background/80 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-background via-background/80 to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -76,7 +76,7 @@ export function Process() {
             <motion.div key={step.number} variants={stepItem} className="relative">
               {i < steps.length - 1 && (
                 <motion.div
-                  className="hidden lg:block absolute top-8 left-[60%] h-px bg-white/[0.08] origin-left"
+                  className="hidden lg:block absolute top-8 left-[60%] h-px bg-white/8 origin-left"
                   style={{ width: "calc(100% - 10px)" }}
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
@@ -90,10 +90,10 @@ export function Process() {
                 className="relative cursor-default"
               >
                 <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-surface-2 rounded-2xl flex items-center justify-center shrink-0 border border-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)]">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-surface-2 rounded-2xl flex items-center justify-center shrink-0 border border-white/8 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)]">
                     <step.icon size={22} className="text-foreground/80" />
                   </div>
-                  <span className="text-3xl sm:text-4xl font-bold text-white/[0.12]">{step.number}</span>
+                  <span className="text-3xl sm:text-4xl font-bold text-white/12">{step.number}</span>
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-foreground">{step.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>

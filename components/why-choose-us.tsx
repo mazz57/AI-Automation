@@ -34,10 +34,10 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section id="about" className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.05]">
+    <section id="about" className="relative py-20 sm:py-24 lg:py-32 border-t border-white/5">
       <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
 
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/8 to-transparent pointer-events-none" />
 
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_80%_at_20%_50%,rgba(255,255,255,0.012),transparent_60%)] pointer-events-none" />
 
@@ -80,9 +80,9 @@ export function WhyChooseUs() {
                   backgroundColor: "rgba(255,255,255,0.025)",
                   transition: { duration: 0.2, ease: [0.25, 0.1, 0.25, 1] },
                 }}
-                className="group flex gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl border border-transparent hover:border-white/[0.08] transition-colors duration-200 cursor-default"
+                className="group flex gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl border border-transparent hover:border-white/8 transition-colors duration-200 cursor-default"
               >
-                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-surface-2 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-surface-3 transition-colors duration-200 border border-white/[0.06]">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-surface-2 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-surface-3 transition-colors duration-200 border border-white/6">
                   <reason.icon size={18} className="text-foreground/80" />
                 </div>
                 <div>

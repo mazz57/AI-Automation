@@ -39,7 +39,7 @@ export function Navbar() {
       />
       {/* Scroll-driven bottom border */}
       <motion.div
-        className="absolute bottom-0 left-0 right-0 h-px bg-white/[0.06] pointer-events-none"
+        className="absolute bottom-0 left-0 right-0 h-px bg-white/6 pointer-events-none"
         style={{ opacity: borderOpacity }}
       />
 
@@ -120,7 +120,7 @@ export function Navbar() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
-              className="md:hidden overflow-hidden border-t border-white/[0.06]"
+              className="md:hidden overflow-hidden border-t border-white/6"
             >
               <motion.div
                 initial="hidden"

@@ -25,13 +25,13 @@ const tableRow = {
 
 export function ProductShowcase() {
   return (
-    <section className="relative py-20 sm:py-24 lg:py-32 border-y border-white/[0.05]">
+    <section className="relative py-20 sm:py-24 lg:py-32 border-y border-white/5">
       <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
 
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
-      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent pointer-events-none" />
-      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-background to-transparent pointer-events-none" />
-      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/8 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-transparent via-white/6 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-linear-to-b from-background to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-background to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -59,9 +59,9 @@ export function ProductShowcase() {
           initial="hidden"
           whileInView="visible"
           viewport={viewport}
-          className="bg-surface-1/95 rounded-2xl border border-white/[0.1] overflow-hidden shadow-[0_28px_72px_rgba(0,0,0,0.42),inset_0_1px_0_0_rgba(255,255,255,0.05)]"
+          className="bg-surface-1/95 rounded-2xl border border-white/10 overflow-hidden shadow-[0_28px_72px_rgba(0,0,0,0.42),inset_0_1px_0_0_rgba(255,255,255,0.05)]"
         >
-          <div className="border-b border-white/[0.08] px-4 sm:px-6 py-3.5 sm:py-4.5 flex items-center justify-between gap-4 bg-white/[0.015]">
+          <div className="border-b border-white/8 px-4 sm:px-6 py-3.5 sm:py-4.5 flex items-center justify-between gap-4 bg-white/1.5">
             <div className="flex items-center gap-3 sm:gap-4">
               <div className="flex items-center gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
@@ -89,7 +89,7 @@ export function ProductShowcase() {
                   key={stat.label}
                   variants={fadeUp}
                   whileHover={{ y: -2, transition: { duration: 0.15 } }}
-                  className="bg-surface-2/75 rounded-xl border border-white/[0.08] p-3 sm:p-4 cursor-default shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)]"
+                  className="bg-surface-2/75 rounded-xl border border-white/8 p-3 sm:p-4 cursor-default shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)]"
                 >
                   <div className="flex items-center justify-between mb-2 sm:mb-3">
                     <stat.icon size={16} className="text-muted-foreground/70" />
@@ -101,8 +101,8 @@ export function ProductShowcase() {
               ))}
             </motion.div>
 
-            <div className="bg-surface-2/55 rounded-xl border border-white/[0.08] overflow-hidden shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)]">
-              <div className="px-4 sm:px-6 py-3.5 sm:py-4 border-b border-white/[0.08] flex items-center justify-between bg-white/[0.015]">
+            <div className="bg-surface-2/55 rounded-xl border border-white/8 overflow-hidden shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)]">
+              <div className="px-4 sm:px-6 py-3.5 sm:py-4 border-b border-white/8 flex items-center justify-between bg-white/1.5">
                 <h3 className="font-medium text-sm sm:text-base text-foreground/90">Recent Leads</h3>
                 <button className="text-muted-foreground/50 hover:text-muted-foreground transition-colors">
                   <MoreHorizontal size={18} />
@@ -113,7 +113,7 @@ export function ProductShowcase() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={viewport}
-                className="divide-y divide-white/[0.04]"
+                className="divide-y divide-white/4"
               >
                 {leads.map((lead) => (
                   <motion.div
@@ -123,7 +123,7 @@ export function ProductShowcase() {
                     className="px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3"
                   >
                     <div className="flex items-center gap-3 sm:gap-4 min-w-0">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-surface-3 rounded-full flex items-center justify-center shrink-0 border border-white/[0.04]">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-surface-3 rounded-full flex items-center justify-center shrink-0 border border-white/4">
                         <span className="text-xs sm:text-sm font-medium text-foreground/80">
                           {lead.name.split(" ").map((n) => n[0]).join("")}
                         </span>
@@ -140,7 +140,7 @@ export function ProductShowcase() {
                             ? "bg-green-500/10 text-green-400 border border-green-500/20"
                             : lead.status === "Contacted"
                             ? "bg-blue-500/10 text-blue-400 border border-blue-500/20"
-                            : "bg-surface-3 text-muted-foreground/90 border border-white/[0.06]"
+                            : "bg-surface-3 text-muted-foreground/90 border border-white/6"
                         }`}
                       >
                         {lead.status}

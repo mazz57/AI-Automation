@@ -6,12 +6,9 @@ import { fadeUp, staggerContainer, viewport } from "@/lib/motion"
 
 export function CTA() {
   return (
-    <section className="relative py-20 sm:py-24 lg:py-32 border-t border-white/[0.05]">
-      {/* Layered section background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-surface-1/20 via-background to-background pointer-events-none" />
-      
-      {/* Top gradient separator */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
+    <section className="relative py-20 sm:py-24 lg:py-32 border-t border-white/5">
+      <div className="absolute inset-0 bg-linear-to-b from-surface-1/20 via-background to-background pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/8 to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Card scales up as it enters viewport */}
@@ -20,9 +17,8 @@ export function CTA() {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={viewport}
           transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
-          className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-surface-1 border border-white/[0.08] p-8 sm:p-12 lg:p-20 shadow-[0_24px_64px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.04)]"
+          className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-surface-1 border border-white/8 p-8 sm:p-12 lg:p-20 shadow-[0_24px_64px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.04)]"
         >
-          {/* Grid background */}
           <div
             className="absolute inset-0 opacity-[0.03]"
             style={{
@@ -30,8 +26,7 @@ export function CTA() {
               backgroundSize: "4rem 4rem",
             }}
           />
-          {/* Radial glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] h-[300px] sm:h-[400px] bg-white/[0.02] rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-100 sm:w-150 h-75 sm:h-100 bg-white/2 rounded-full blur-3xl pointer-events-none" />
 
           {/* Content — staggered children */}
           <motion.div
@@ -68,7 +63,7 @@ export function CTA() {
               <motion.button
                 whileHover={{ scale: 1.03, transition: { duration: 0.15 } }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-8 py-3 rounded-full border border-white/[0.1] bg-surface-2/50 text-foreground text-sm font-medium hover:bg-surface-2 hover:border-white/[0.15] transition-all duration-150 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)]"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-8 py-3 rounded-full border border-white/10 bg-surface-2/50 text-foreground text-sm font-medium hover:bg-surface-2 hover:border-white/15 transition-all duration-150 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)]"
               >
                 Schedule a Call
               </motion.button>
