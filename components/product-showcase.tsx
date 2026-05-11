@@ -51,10 +51,10 @@ export function ProductShowcase() {
             Featured Product
           </motion.p>
           <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-3 sm:mb-4 text-white">
-            LeadFlow — Intelligent Lead Management
+            Automation Platform
           </motion.h2>
           <motion.p variants={fadeUp} className="text-muted-foreground text-base sm:text-lg">
-            An AI-powered CRM that automatically scores, qualifies, and nurtures leads for maximum conversion.
+            An intelligent system that automates workflows, scores leads, and nurtures relationships for maximum conversion.
           </motion.p>
         </motion.div>
 
@@ -74,10 +74,10 @@ export function ProductShowcase() {
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
                 <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
               </div>
-              <div className="text-sm font-medium text-foreground/90">LeadFlow Dashboard</div>
+              <div className="text-sm font-medium text-foreground/90">Dashboard</div>
             </div>
             <div className="hidden sm:flex items-center gap-2 text-muted-foreground/50">
-              <span className="text-xs">demo.leadflow.ai</span>
+              <span className="text-xs">app.omnimate.io</span>
               <ArrowUpRight size={14} />
             </div>
           </div>

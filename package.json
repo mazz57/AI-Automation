@@ -1,6 +1,7 @@
 {
-  "name": "my-project",
-  "version": "0.1.0",
+  "name": "omnimate-landing",
+  "version": "1.0.0",
+  "description": "Omnimate - Automation & AI Solutions Landing Page",
   "private": true,
   "scripts": {
     "dev": "next dev",

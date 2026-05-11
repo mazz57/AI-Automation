@@ -18,9 +18,9 @@ const metrics = [
 ]
 
 const recentActivity = [
-  { name: "Acme Corp", action: "New lead captured", time: "2m ago", dot: "bg-emerald-400" },
-  { name: "Stripe Integration", action: "Workflow triggered", time: "5m ago", dot: "bg-blue-400" },
-  { name: "Outreach sequence", action: "68% open rate", time: "12m ago", dot: "bg-amber-400" },
+  { name: "Lead captured", action: "Qualification in progress", time: "2m ago", dot: "bg-emerald-400" },
+  { name: "Workflow executed", action: "Automation triggered", time: "5m ago", dot: "bg-blue-400" },
+  { name: "Campaign sent", action: "Email delivery complete", time: "12m ago", dot: "bg-amber-400" },
 ]
 
 export function Hero() {
@@ -124,7 +124,7 @@ export function Hero() {
                   <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
                   <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
                 </div>
-                <span className="text-[11px] text-muted-foreground/50 font-mono tracking-wide">nexus.app/dashboard</span>
+                <span className="text-[11px] text-muted-foreground/50 font-mono tracking-wide">automation.app/dashboard</span>
                 <div className="w-16" />
               </div>
 
